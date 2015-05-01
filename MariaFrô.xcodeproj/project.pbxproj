@@ -17,6 +17,8 @@
 		ABB180971AF283A700446BB7 /* WindowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB180961AF283A700446BB7 /* WindowCell.swift */; };
 		ABB180991AF297DE00446BB7 /* VCnavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB180981AF297DE00446BB7 /* VCnavigation.swift */; };
 		ABB180A91AF2F08300446BB7 /* Quicksand-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ABB180A81AF2F08300446BB7 /* Quicksand-LightItalic.otf */; };
+		ABB180AD1AF325F400446BB7 /* Quicksand-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ABB180AC1AF325F400446BB7 /* Quicksand-Italic.otf */; };
+		ABB180AF1AF3260100446BB7 /* Quicksand-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = ABB180AE1AF3260100446BB7 /* Quicksand-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		ABB180961AF283A700446BB7 /* WindowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowCell.swift; sourceTree = "<group>"; };
 		ABB180981AF297DE00446BB7 /* VCnavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCnavigation.swift; sourceTree = "<group>"; };
 		ABB180A81AF2F08300446BB7 /* Quicksand-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-LightItalic.otf"; sourceTree = "<group>"; };
+		ABB180AC1AF325F400446BB7 /* Quicksand-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Italic.otf"; sourceTree = "<group>"; };
+		ABB180AE1AF3260100446BB7 /* Quicksand-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 				ABB180871AF27D6300446BB7 /* MariaFrôTests */,
 				ABB180701AF27D6300446BB7 /* Products */,
 				ABB180A81AF2F08300446BB7 /* Quicksand-LightItalic.otf */,
+				ABB180AC1AF325F400446BB7 /* Quicksand-Italic.otf */,
+				ABB180AE1AF3260100446BB7 /* Quicksand-Regular.otf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,6 +213,8 @@
 				ABB1807A1AF27D6300446BB7 /* Main.storyboard in Resources */,
 				ABB1807F1AF27D6300446BB7 /* LaunchScreen.xib in Resources */,
 				ABB180A91AF2F08300446BB7 /* Quicksand-LightItalic.otf in Resources */,
+				ABB180AD1AF325F400446BB7 /* Quicksand-Italic.otf in Resources */,
+				ABB180AF1AF3260100446BB7 /* Quicksand-Regular.otf in Resources */,
 				ABB1807C1AF27D6300446BB7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

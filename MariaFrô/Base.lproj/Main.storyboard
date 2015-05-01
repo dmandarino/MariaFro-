@@ -4,8 +4,17 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <customFonts key="customFonts">
+        <mutableArray key="Quicksand-Italic.otf">
+            <string>Quicksand-Italic</string>
+        </mutableArray>
         <mutableArray key="Quicksand-LightItalic.otf">
             <string>Quicksand-LightItalic</string>
+            <string>Quicksand-LightItalic</string>
+            <string>Quicksand-LightItalic</string>
+            <string>Quicksand-LightItalic</string>
+        </mutableArray>
+        <mutableArray key="Quicksand-Regular.otf">
+            <string>Quicksand-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -202,7 +211,7 @@
             </objects>
             <point key="canvasLocation" x="379" y="566"/>
         </scene>
-        <!--View Controller-->
+        <!--Maria Frô-->
         <scene sceneID="t7d-fh-9DW">
             <objects>
                 <viewController id="hs7-Lh-tiN" sceneMemberID="viewController">
@@ -213,13 +222,120 @@
                     <view key="view" contentMode="scaleToFill" id="mf1-KS-FQE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Gsv-iH-uEO">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="94" width="128" height="110"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rio de  Janeiro, Brazil" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtX-5E-lrH">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Quicksand-LightItalic" family="Quicksand" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="152" y="100" width="181" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="contato.mariafro@gmail.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Log-A6-Lhd">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Quicksand-LightItalic" family="Quicksand" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="152" y="138" width="220" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+55 (21) 98726-2235" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1V-aW-LU3">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Quicksand-LightItalic" family="Quicksand" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="152" y="183" width="196" height="21"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whatsapp" translatesAutoresizingMaskIntoConstraints="NO" id="wEC-Zj-gQU">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="314" y="181" width="26" height="25"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44L-7w-YcD">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Italic" family="Quicksand" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="283" width="101" height="21"/>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cvw-aB-BBa">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Handmade flower crown brand. Established in march, 2014. Our crowns are made with much love and care by mother and daugther. Brides, made honors, kids, moms, happy teenagers are faithfull to Maria Frô. </string>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                                    <rect key="frame" x="16" y="327" width="354" height="181"/>
+                                </variation>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram" translatesAutoresizingMaskIntoConstraints="NO" id="UZo-Sb-Ko9">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="234" width="33" height="30"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pinterest" translatesAutoresizingMaskIntoConstraints="NO" id="q6u-Xj-rpB">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="108" y="234" width="30" height="30"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="YCU-Yt-XdF">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="54" y="234" width="46" height="30"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Gsv-iH-uEO"/>
+                                <exclude reference="CtX-5E-lrH"/>
+                                <exclude reference="Log-A6-Lhd"/>
+                                <exclude reference="K1V-aW-LU3"/>
+                                <exclude reference="wEC-Zj-gQU"/>
+                                <exclude reference="44L-7w-YcD"/>
+                                <exclude reference="Cvw-aB-BBa"/>
+                                <exclude reference="UZo-Sb-Ko9"/>
+                                <exclude reference="q6u-Xj-rpB"/>
+                                <exclude reference="YCU-Yt-XdF"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Gsv-iH-uEO"/>
+                                <include reference="CtX-5E-lrH"/>
+                                <include reference="Log-A6-Lhd"/>
+                                <include reference="K1V-aW-LU3"/>
+                                <include reference="wEC-Zj-gQU"/>
+                                <include reference="44L-7w-YcD"/>
+                                <include reference="Cvw-aB-BBa"/>
+                                <include reference="UZo-Sb-Ko9"/>
+                                <include reference="q6u-Xj-rpB"/>
+                                <include reference="YCU-Yt-XdF"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="SE0-3K-MGR"/>
+                    <navigationItem key="navigationItem" title="Maria Frô" id="SE0-3K-MGR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AID-EV-p0x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1169" y="566"/>
+            <point key="canvasLocation" x="1168.5" y="565.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8LK-29-WLW">
@@ -261,6 +377,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Pinterest" width="2500" height="2500"/>
+        <image name="facebook" width="626" height="412"/>
         <image name="iconCrown" width="294" height="194"/>
+        <image name="instagram" width="640" height="588"/>
+        <image name="logo" width="1230" height="1020"/>
+        <image name="whatsapp" width="300" height="300"/>
     </resources>
 </document>
