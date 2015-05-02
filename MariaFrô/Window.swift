@@ -13,7 +13,7 @@ class Window: UICollectionViewController {
    
     let pictures = [UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1")]
     
-    let pictureInfo = ["R$45", "R$50", "R$55", "R$60", "R$65", "R$65", "R$65", "R$65", "R$65", "R$65", "R$65", "R$65", "R$65", "R$65"]
+    let pictureInfo = ["#001", "#002", "#003", "#004", "#005", "#006", "#007", "#008", "#009", "#65", "#010", "#011", "#012", "#013"]
     
     
     override func viewDidLoad() {

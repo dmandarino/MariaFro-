@@ -92,13 +92,13 @@
 		ABB180711AF27D6300446BB7 /* MariaFrô */ = {
 			isa = PBXGroup;
 			children = (
+				ABB180781AF27D6300446BB7 /* Main.storyboard */,
 				ABB180741AF27D6300446BB7 /* AppDelegate.swift */,
 				ABB180761AF27D6300446BB7 /* ViewController.swift */,
 				ABB180941AF2837E00446BB7 /* Window.swift */,
 				ABB180961AF283A700446BB7 /* WindowCell.swift */,
-				ABB180781AF27D6300446BB7 /* Main.storyboard */,
-				ABB1807D1AF27D6300446BB7 /* LaunchScreen.xib */,
 				ABB180981AF297DE00446BB7 /* VCnavigation.swift */,
+				ABB1807D1AF27D6300446BB7 /* LaunchScreen.xib */,
 				ABB1807B1AF27D6300446BB7 /* Images.xcassets */,
 				ABB180721AF27D6300446BB7 /* Supporting Files */,
 			);
