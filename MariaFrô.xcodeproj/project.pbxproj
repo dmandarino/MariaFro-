@@ -9,11 +9,10 @@
 /* Begin PBXBuildFile section */
 		5A60A1B91AF7FC1C000A824F /* MainScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A60A1B81AF7FC1C000A824F /* MainScreenController.swift */; };
 		5A60A1BB1AF7FC91000A824F /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A60A1BA1AF7FC91000A824F /* SectionCell.swift */; };
-		AB9C96BC1AF7B2D100F73E08 /* MariaFroPhotoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9C96BB1AF7B2D100F73E08 /* MariaFroPhotoHeaderView.swift */; };
 		AB9C96BE1AF7C61900F73E08 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9C96BD1AF7C61900F73E08 /* Profile.swift */; };
 		ABB180751AF27D6300446BB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB180741AF27D6300446BB7 /* AppDelegate.swift */; };
 		ABB1807A1AF27D6300446BB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB180781AF27D6300446BB7 /* Main.storyboard */; };
-		ABB1807C1AF27D6300446BB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABB1807B1AF27D6300446BB7 /* Images.xcassets */; };
+		ABB1807C1AF27D6300446BB7 /* phot.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABB1807B1AF27D6300446BB7 /* phot.xcassets */; };
 		ABB1807F1AF27D6300446BB7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB1807D1AF27D6300446BB7 /* LaunchScreen.xib */; };
 		ABB1808B1AF27D6300446BB7 /* MariaFro_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB1808A1AF27D6300446BB7 /* MariaFro_Tests.swift */; };
 		ABB180971AF283A700446BB7 /* WindowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB180961AF283A700446BB7 /* WindowCell.swift */; };
@@ -36,13 +35,12 @@
 /* Begin PBXFileReference section */
 		5A60A1B81AF7FC1C000A824F /* MainScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenController.swift; sourceTree = "<group>"; };
 		5A60A1BA1AF7FC91000A824F /* SectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
-		AB9C96BB1AF7B2D100F73E08 /* MariaFroPhotoHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MariaFroPhotoHeaderView.swift; sourceTree = "<group>"; };
 		AB9C96BD1AF7C61900F73E08 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		ABB1806F1AF27D6300446BB7 /* MariaFrô.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MariaFrô.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB180731AF27D6300446BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABB180741AF27D6300446BB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABB180791AF27D6300446BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ABB1807B1AF27D6300446BB7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ABB1807B1AF27D6300446BB7 /* phot.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = phot.xcassets; sourceTree = "<group>"; };
 		ABB1807E1AF27D6300446BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		ABB180841AF27D6300446BB7 /* MariaFrôTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MariaFrôTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB180891AF27D6300446BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				5A60A1B81AF7FC1C000A824F /* MainScreenController.swift */,
+				AB9C96BD1AF7C61900F73E08 /* Profile.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -119,9 +118,7 @@
 				ABB180741AF27D6300446BB7 /* AppDelegate.swift */,
 				5A60A1BC1AF7FCF9000A824F /* controller */,
 				5A60A1BD1AF7FD09000A824F /* view */,
-				AB9C96BB1AF7B2D100F73E08 /* MariaFroPhotoHeaderView.swift */,
-				AB9C96BD1AF7C61900F73E08 /* Profile.swift */,
-				ABB1807B1AF27D6300446BB7 /* Images.xcassets */,
+				ABB1807B1AF27D6300446BB7 /* phot.xcassets */,
 				ABB180721AF27D6300446BB7 /* Supporting Files */,
 			);
 			path = "MariaFrô";
@@ -237,7 +234,7 @@
 				ABB180A91AF2F08300446BB7 /* Quicksand-LightItalic.otf in Resources */,
 				ABB180AD1AF325F400446BB7 /* Quicksand-Italic.otf in Resources */,
 				ABB180AF1AF3260100446BB7 /* Quicksand-Regular.otf in Resources */,
-				ABB1807C1AF27D6300446BB7 /* Images.xcassets in Resources */,
+				ABB1807C1AF27D6300446BB7 /* phot.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +256,6 @@
 				5A60A1BB1AF7FC91000A824F /* SectionCell.swift in Sources */,
 				ABB180991AF297DE00446BB7 /* VCnavigation.swift in Sources */,
 				AB9C96BE1AF7C61900F73E08 /* Profile.swift in Sources */,
-				AB9C96BC1AF7B2D100F73E08 /* MariaFroPhotoHeaderView.swift in Sources */,
 				5A60A1B91AF7FC1C000A824F /* MainScreenController.swift in Sources */,
 				ABB180751AF27D6300446BB7 /* AppDelegate.swift in Sources */,
 			);

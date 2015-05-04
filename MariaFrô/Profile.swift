@@ -19,6 +19,7 @@ class Profile: UIViewController {
         background.image = UIImage(named: "background1")
         background.alpha = 0.2
         
+        self.tabBarController?.tabBar.tintColor = UIColor(red: 0.9551, green: 0.8627, blue: 0.8706, alpha: 1)
         // Do any additional setup after loading the view.
     }
 

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Maa-95-PvL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Maa-95-PvL">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Quicksand-Italic.otf">
@@ -26,18 +27,21 @@
             <string>Quicksand-Regular</string>
             <string>Quicksand-Regular</string>
             <string>Quicksand-Regular</string>
-            <string>Quicksand-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Maria Frô-->
         <scene sceneID="BWF-ch-RIY">
             <objects>
                 <navigationController id="W2A-OJ-Lsj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="mfI-du-GRv"/>
+                    <tabBarItem key="tabBarItem" title="Maria Frô" image="icon4" id="mfI-du-GRv"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aqJ-3r-Ft4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.94509803920000002" green="0.85490196080000003" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="hs7-Lh-tiN" kind="relationship" relationship="rootViewController" id="mzO-2I-WoH"/>
@@ -45,16 +49,20 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEc-Hg-pTA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="379" y="566"/>
+            <point key="canvasLocation" x="202.13333333333333" y="535.81333333333328"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Crowns-->
         <scene sceneID="AXZ-Ww-QH3">
             <objects>
                 <navigationController id="wMH-PX-1Iy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="K6d-ho-9XC"/>
+                    <tabBarItem key="tabBarItem" title="Crowns" image="flowericon 2" id="K6d-ho-9XC"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="i2E-R1-82K">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.94509803921568625" green="0.85490196078431369" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="0pw-mo-9re" kind="relationship" relationship="rootViewController" id="AMy-ER-hBL"/>
@@ -62,13 +70,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xyj-PM-UlK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="391" y="-355"/>
+            <point key="canvasLocation" x="208.53333333333333" y="-336.06666666666666"/>
         </scene>
         <!--Maria Frô-->
         <scene sceneID="fa5-Ob-ZPJ">
             <objects>
                 <tableViewController id="0pw-mo-9re" customClass="MainScreenController" customModule="MariaFro_" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="236" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ef3-vo-zqx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -77,8 +86,8 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lmr-7m-VM0" id="ygz-Ov-RvA">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PKz-t2-uw0">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PKz-t2-uw0">
+                                            <rect key="frame" x="0.0" y="0.0" width="400" height="235"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gh6-Mf-kEJ">
                                                 <size key="itemSize" width="179" height="165"/>
@@ -94,62 +103,23 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="179" height="165"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cSi-4a-Ewz">
-                                                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="179" height="165"/>
-                                                                </variation>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cSi-4a-Ewz">
+                                                                <rect key="frame" x="0.0" y="0.0" width="179" height="165"/>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZR3-Iu-SOu">
-                                                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                                                <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
-                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                                    <rect key="frame" x="0.0" y="144" width="179" height="21"/>
-                                                                </variation>
-                                                            </label>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     </view>
-                                                    <variation key="default">
-                                                        <mask key="subviews">
-                                                            <exclude reference="cSi-4a-Ewz"/>
-                                                            <exclude reference="ZR3-Iu-SOu"/>
-                                                        </mask>
-                                                    </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
-                                                        <mask key="subviews">
-                                                            <include reference="cSi-4a-Ewz"/>
-                                                            <include reference="ZR3-Iu-SOu"/>
-                                                        </mask>
-                                                    </variation>
                                                     <connections>
-                                                        <outlet property="crownInfo" destination="ZR3-Iu-SOu" id="j1p-T7-QRf"/>
                                                         <outlet property="crownPicture" destination="cSi-4a-Ewz" id="rJ4-mE-lWX"/>
                                                     </connections>
                                                 </collectionViewCell>
                                             </cells>
-                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="0.0" y="0.0" width="400" height="235"/>
-                                            </variation>
                                             <connections>
                                                 <outlet property="dataSource" destination="lmr-7m-VM0" id="toy-oX-wLO"/>
                                                 <outlet property="delegate" destination="lmr-7m-VM0" id="SFG-VA-2aY"/>
                                             </connections>
                                         </collectionView>
                                     </subviews>
-                                    <variation key="default">
-                                        <mask key="subviews">
-                                            <exclude reference="PKz-t2-uw0"/>
-                                        </mask>
-                                    </variation>
-                                    <variation key="heightClass=regular-widthClass=compact">
-                                        <mask key="subviews">
-                                            <include reference="PKz-t2-uw0"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="collectionView" destination="PKz-t2-uw0" id="MJ2-PK-LT8"/>
@@ -165,7 +135,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1oV-lt-3rB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1251" y="-355.5"/>
+            <point key="canvasLocation" x="667.20000000000005" y="-336.54000000000002"/>
         </scene>
         <!--Maria Frô-->
         <scene sceneID="t7d-fh-9DW">
@@ -176,315 +146,315 @@
                         <viewControllerLayoutGuide type="bottom" id="xPQ-aP-8T6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mf1-KS-FQE">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rio de  Janeiro, Brazil" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtX-5E-lrH">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rio de  Janeiro, BR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtX-5E-lrH">
+                                <rect key="frame" x="120" y="82" width="181" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="181" id="9te-W9-KGU"/>
+                                    <constraint firstAttribute="height" constant="21" id="IAD-pF-A6p"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Quicksand-LightItalic" family="Quicksand" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="152" y="93" width="181" height="21"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="contato.mariafro@gmail.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Log-A6-Lhd">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="Quicksand-LightItalic" family="Quicksand" pointSize="15"/>
+                                <rect key="frame" x="120" y="106" width="220" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="IF2-8q-Jbg"/>
+                                    <constraint firstAttribute="width" constant="220" id="jGJ-XF-lob"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-LightItalic" family="Quicksand" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="152" y="122" width="220" height="21"/>
-                                </variation>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVr-9P-DqR">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CKe-9L-Fyh">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="0.0" y="5" width="402" height="552"/>
-                                        </variation>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-icon-vector-Map_pin" translatesAutoresizingMaskIntoConstraints="NO" id="T9u-WY-1H6">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="21" y="494" width="23" height="22"/>
-                                        </variation>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-icon-vector-Map_pin" translatesAutoresizingMaskIntoConstraints="NO" id="f5Y-CD-zSy">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="21" y="525" width="23" height="22"/>
-                                        </variation>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points of Sale" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDC-Jp-jY8">
-                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="Quicksand-Italic" family="Quicksand" pointSize="22"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="15" y="415" width="168" height="21"/>
-                                        </variation>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-icon-vector-Map_pin" translatesAutoresizingMaskIntoConstraints="NO" id="UYO-Wy-6u5">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="21" y="465" width="23" height="22"/>
-                                        </variation>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Itanhangá " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEf-zd-lWV">
-                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="52" y="465" width="114" height="21"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rua Fonte da Saudade, Lagoa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxd-rr-jjk">
-                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="52" y="495" width="253" height="21"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puc Rio, Gávea" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfS-5J-hEe">
-                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="52" y="525" width="156" height="21"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Clients" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cb0-0x-Eba">
-                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="Quicksand-Italic" family="Quicksand" pointSize="21"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="15" y="245" width="122" height="25"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brides" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2C8-0v-OOd">
-                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="52" y="297" width="72" height="21"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bridesmaid" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzW-ba-ctG">
-                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="52" y="326" width="136" height="21"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kids" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMc-ey-tjt">
-                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="52" y="355" width="49" height="21"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mom's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tal-sN-bCM">
-                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="191" y="296" width="63" height="21"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flower Girl" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8EX-ix-uhR">
-                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="191" y="325" width="107" height="21"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teenagers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asd-ZD-3X4">
-                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="191" y="354" width="89" height="21"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Handmade flower crown brand. Established in march, 2014. Our crowns are made with much love and care by mother and daugther." lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKs-A7-dPe">
-                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="15" y="119" width="374" height="84"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44L-7w-YcD">
-                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="Quicksand-Italic" family="Quicksand" pointSize="21"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="15" y="90" width="101" height="21"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ke1-L3-ZEI">
-                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                        <string key="text">Ship all over Brazil !
-</string>
-                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="15" y="202" width="165" height="21"/>
-                                        </variation>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qV6-Yh-p3U">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Button" image="instagram">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="15" y="28" width="33" height="30"/>
-                                        </variation>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2f-fj-Izf">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" image="Pinterest">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="99" y="27" width="33" height="31"/>
-                                        </variation>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8c-Sx-qr6">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Button" image="facebook">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="47" y="28" width="49" height="30"/>
-                                        </variation>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="CKe-9L-Fyh"/>
-                                        <exclude reference="T9u-WY-1H6"/>
-                                        <exclude reference="f5Y-CD-zSy"/>
-                                        <exclude reference="sDC-Jp-jY8"/>
-                                        <exclude reference="UYO-Wy-6u5"/>
-                                        <exclude reference="yEf-zd-lWV"/>
-                                        <exclude reference="cxd-rr-jjk"/>
-                                        <exclude reference="lfS-5J-hEe"/>
-                                        <exclude reference="Cb0-0x-Eba"/>
-                                        <exclude reference="2C8-0v-OOd"/>
-                                        <exclude reference="FzW-ba-ctG"/>
-                                        <exclude reference="kMc-ey-tjt"/>
-                                        <exclude reference="tal-sN-bCM"/>
-                                        <exclude reference="8EX-ix-uhR"/>
-                                        <exclude reference="Asd-ZD-3X4"/>
-                                        <exclude reference="tKs-A7-dPe"/>
-                                        <exclude reference="44L-7w-YcD"/>
-                                        <exclude reference="Ke1-L3-ZEI"/>
-                                        <exclude reference="qV6-Yh-p3U"/>
-                                        <exclude reference="t2f-fj-Izf"/>
-                                        <exclude reference="e8c-Sx-qr6"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="190" width="400" height="561"/>
-                                    <mask key="subviews">
-                                        <include reference="CKe-9L-Fyh"/>
-                                        <include reference="T9u-WY-1H6"/>
-                                        <include reference="f5Y-CD-zSy"/>
-                                        <include reference="sDC-Jp-jY8"/>
-                                        <include reference="UYO-Wy-6u5"/>
-                                        <include reference="yEf-zd-lWV"/>
-                                        <include reference="cxd-rr-jjk"/>
-                                        <include reference="lfS-5J-hEe"/>
-                                        <include reference="Cb0-0x-Eba"/>
-                                        <include reference="2C8-0v-OOd"/>
-                                        <include reference="FzW-ba-ctG"/>
-                                        <include reference="kMc-ey-tjt"/>
-                                        <include reference="tal-sN-bCM"/>
-                                        <include reference="8EX-ix-uhR"/>
-                                        <include reference="Asd-ZD-3X4"/>
-                                        <include reference="tKs-A7-dPe"/>
-                                        <include reference="44L-7w-YcD"/>
-                                        <include reference="Ke1-L3-ZEI"/>
-                                        <include reference="qV6-Yh-p3U"/>
-                                        <include reference="t2f-fj-Izf"/>
-                                        <include reference="e8c-Sx-qr6"/>
-                                    </mask>
-                                </variation>
-                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whatsapp" translatesAutoresizingMaskIntoConstraints="NO" id="wEC-Zj-gQU">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="307" y="154" width="26" height="25"/>
-                                </variation>
+                                <rect key="frame" x="251" y="126" width="26" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="5Bl-iy-1ay"/>
+                                    <constraint firstAttribute="height" constant="25" id="Jx4-Qn-uw7"/>
+                                </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Gsv-iH-uEO">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="13" y="72" width="128" height="110"/>
-                                </variation>
+                                <rect key="frame" x="13" y="72" width="101" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="9tw-UK-SBA"/>
+                                    <constraint firstAttribute="height" constant="89" id="RLn-8z-zrI"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+55 (21) 98726-2235" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1V-aW-LU3">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="Quicksand-LightItalic" family="Quicksand" pointSize="15"/>
+                                <rect key="frame" x="120" y="126" width="133" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="H6G-fi-hFJ"/>
+                                    <constraint firstAttribute="width" constant="133" id="MrS-PG-rwb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-LightItalic" family="Quicksand" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="152" y="154" width="196" height="21"/>
-                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qHm-vV-MG6">
+                                <rect key="frame" x="0.0" y="159" width="320" height="409"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewV-5o-Iph">
+                                <rect key="frame" x="13" y="169" width="27" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="27" id="F5j-eU-cp3"/>
+                                    <constraint firstAttribute="height" constant="26" id="MVQ-aB-31q"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="instagram">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xr8-vv-oMZ">
+                                <rect key="frame" x="87" y="169" width="27" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="27" id="HwZ-PE-Vaj"/>
+                                    <constraint firstAttribute="height" constant="26" id="SDI-JD-rfF"/>
+                                </constraints>
+                                <state key="normal" image="Pinterest">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwW-hG-Dej">
+                                <rect key="frame" x="41" y="168" width="44" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="Zb6-gY-ZIr"/>
+                                    <constraint firstAttribute="width" constant="44" id="iFC-ow-oIu"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="508-NX-HPW">
+                                <rect key="frame" x="16" y="203" width="101" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Rzx-kl-OCl"/>
+                                    <constraint firstAttribute="width" constant="101" id="gGH-8U-iTh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Italic" family="Quicksand" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Handmade flower crown brand. Established in march, 2014. Our crowns are made with much love and care by mother and daugther." lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLj-2K-75C">
+                                <rect key="frame" x="16" y="216" width="278" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="Vmf-EN-sp7"/>
+                                    <constraint firstAttribute="width" constant="278" id="Zes-rD-rxg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZx-Ry-Yus">
+                                <rect key="frame" x="16" y="286" width="165" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="2j0-a3-9Ol"/>
+                                    <constraint firstAttribute="height" constant="21" id="k0I-co-SNd"/>
+                                </constraints>
+                                <string key="text">Ship all over Brazil !
+</string>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Clients" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCN-23-1OT">
+                                <rect key="frame" x="13" y="315" width="122" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="lMQ-AN-UWc"/>
+                                    <constraint firstAttribute="width" constant="122" id="yWy-YU-6No"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Italic" family="Quicksand" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brides" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nei-X7-C6X">
+                                <rect key="frame" x="41" y="337" width="72" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="jIf-tG-Waf"/>
+                                    <constraint firstAttribute="height" constant="21" id="pVa-SZ-Iyl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bridesmaid" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhX-vs-Cc2">
+                                <rect key="frame" x="41" y="356" width="136" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="X3n-HB-vbg"/>
+                                    <constraint firstAttribute="height" constant="21" id="wR6-aa-G3U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kids" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGW-9t-wZQ">
+                                <rect key="frame" x="42" y="374" width="49" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Nsb-sF-K84"/>
+                                    <constraint firstAttribute="width" constant="49" id="blo-Dl-fW1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mom's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZ8-aX-llW">
+                                <rect key="frame" x="180" y="336" width="63" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6d4-af-YMX"/>
+                                    <constraint firstAttribute="width" constant="63" id="dy7-Hv-H1w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flower Girl" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6W4-lJ-V5o">
+                                <rect key="frame" x="180" y="353" width="107" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="nPT-8n-ZdM"/>
+                                    <constraint firstAttribute="width" constant="107" id="nZD-7T-CHV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teenagers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZV-MA-vqn">
+                                <rect key="frame" x="180" y="374" width="89" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="JtZ-h0-7k8"/>
+                                    <constraint firstAttribute="width" constant="89" id="VtW-9L-YjU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points of Sale" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2be-d2-AYT">
+                                <rect key="frame" x="9" y="403" width="168" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ZYf-lA-bV8"/>
+                                    <constraint firstAttribute="width" constant="168" id="esa-Lb-nIN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Italic" family="Quicksand" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-icon-vector-Map_pin" translatesAutoresizingMaskIntoConstraints="NO" id="VES-fs-dzc">
+                                <rect key="frame" x="9" y="432" width="20" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ipg-an-uar"/>
+                                    <constraint firstAttribute="width" constant="20" id="sPv-46-s7w"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-icon-vector-Map_pin" translatesAutoresizingMaskIntoConstraints="NO" id="56C-gW-T6d">
+                                <rect key="frame" x="9" y="461" width="20" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8Cf-Fq-24s"/>
+                                    <constraint firstAttribute="width" constant="20" id="kKt-7R-Bca"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-icon-vector-Map_pin" translatesAutoresizingMaskIntoConstraints="NO" id="2gW-lV-v8o">
+                                <rect key="frame" x="9" y="490" width="20" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5Y2-fY-ioH"/>
+                                    <constraint firstAttribute="width" constant="20" id="bG5-Ge-xZy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Itanhangá" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpS-Lh-fVC">
+                                <rect key="frame" x="37" y="432" width="91" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="hix-0r-IAO"/>
+                                    <constraint firstAttribute="width" constant="91" id="ueO-UX-lKS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PUC-Rio, Gávea" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNY-6S-nFu">
+                                <rect key="frame" x="37" y="490" width="129" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="ewl-ex-70v"/>
+                                    <constraint firstAttribute="height" constant="21" id="jtu-fa-t5d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rua Fonte da Saudade, Lagoa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5z-cU-Hql">
+                                <rect key="frame" x="37" y="461" width="216" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="73B-D0-GmT"/>
+                                    <constraint firstAttribute="width" constant="216" id="Imk-Vr-Rff"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="CtX-5E-lrH"/>
-                                <exclude reference="Log-A6-Lhd"/>
-                                <exclude reference="GVr-9P-DqR"/>
-                                <exclude reference="wEC-Zj-gQU"/>
-                                <exclude reference="Gsv-iH-uEO"/>
-                                <exclude reference="K1V-aW-LU3"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="CtX-5E-lrH"/>
-                                <include reference="Log-A6-Lhd"/>
-                                <include reference="GVr-9P-DqR"/>
-                                <include reference="wEC-Zj-gQU"/>
-                                <include reference="Gsv-iH-uEO"/>
-                                <include reference="K1V-aW-LU3"/>
-                            </mask>
-                        </variation>
+                        <constraints>
+                            <constraint firstItem="56C-gW-T6d" firstAttribute="centerX" secondItem="2gW-lV-v8o" secondAttribute="centerX" id="0wU-bu-g20"/>
+                            <constraint firstItem="oNY-6S-nFu" firstAttribute="centerY" secondItem="2gW-lV-v8o" secondAttribute="centerY" id="14q-q6-exZ"/>
+                            <constraint firstItem="56C-gW-T6d" firstAttribute="top" secondItem="VES-fs-dzc" secondAttribute="bottom" constant="8" id="1kZ-le-ryk"/>
+                            <constraint firstItem="BLj-2K-75C" firstAttribute="top" secondItem="508-NX-HPW" secondAttribute="bottom" constant="-8" id="3GV-di-OER"/>
+                            <constraint firstItem="qHm-vV-MG6" firstAttribute="leading" secondItem="2be-d2-AYT" secondAttribute="trailing" constant="-177" id="3WV-d6-Dtq"/>
+                            <constraint firstItem="Log-A6-Lhd" firstAttribute="leading" secondItem="Gsv-iH-uEO" secondAttribute="trailing" constant="6" id="4bF-hB-SSI"/>
+                            <constraint firstItem="VES-fs-dzc" firstAttribute="centerY" secondItem="VpS-Lh-fVC" secondAttribute="centerY" id="4r2-J1-ef3"/>
+                            <constraint firstItem="FZx-Ry-Yus" firstAttribute="top" secondItem="BLj-2K-75C" secondAttribute="bottom" constant="-14" id="5d6-Yc-M8g"/>
+                            <constraint firstItem="6W4-lJ-V5o" firstAttribute="leading" secondItem="AhX-vs-Cc2" secondAttribute="trailing" constant="3" id="9j1-W4-sXX"/>
+                            <constraint firstItem="K1V-aW-LU3" firstAttribute="top" secondItem="Log-A6-Lhd" secondAttribute="bottom" constant="-1" id="B78-4L-yEi"/>
+                            <constraint firstItem="qHm-vV-MG6" firstAttribute="width" secondItem="mf1-KS-FQE" secondAttribute="width" id="BUV-vk-piz"/>
+                            <constraint firstItem="2be-d2-AYT" firstAttribute="top" secondItem="RGW-9t-wZQ" secondAttribute="bottom" constant="8" id="Bl5-il-Qug"/>
+                            <constraint firstItem="Gsv-iH-uEO" firstAttribute="top" secondItem="f3t-kp-GyY" secondAttribute="bottom" constant="8" id="CLk-hW-b4h"/>
+                            <constraint firstItem="2gW-lV-v8o" firstAttribute="top" secondItem="56C-gW-T6d" secondAttribute="bottom" constant="8" id="CWK-n0-JJc"/>
+                            <constraint firstItem="wEC-Zj-gQU" firstAttribute="top" secondItem="Log-A6-Lhd" secondAttribute="bottom" constant="-1" id="L9s-Sa-zsn"/>
+                            <constraint firstItem="Nei-X7-C6X" firstAttribute="centerY" secondItem="mZ8-aX-llW" secondAttribute="centerY" constant="1" id="LJF-7e-ssT"/>
+                            <constraint firstItem="qHm-vV-MG6" firstAttribute="leading" secondItem="Nei-X7-C6X" secondAttribute="trailing" constant="-113" id="LJK-Xc-M9F"/>
+                            <constraint firstItem="nwW-hG-Dej" firstAttribute="leading" secondItem="ewV-5o-Iph" secondAttribute="trailing" constant="1" id="Mvp-rc-iDv"/>
+                            <constraint firstItem="vCN-23-1OT" firstAttribute="top" secondItem="FZx-Ry-Yus" secondAttribute="bottom" constant="8" id="NAe-k1-0BM"/>
+                            <constraint firstItem="wEC-Zj-gQU" firstAttribute="leading" secondItem="K1V-aW-LU3" secondAttribute="trailing" constant="-2" id="NEp-W4-JKB"/>
+                            <constraint firstItem="AhX-vs-Cc2" firstAttribute="top" secondItem="Nei-X7-C6X" secondAttribute="bottom" constant="-2" id="ORt-OT-jGn"/>
+                            <constraint firstItem="qHm-vV-MG6" firstAttribute="leading" secondItem="56C-gW-T6d" secondAttribute="trailing" constant="-29" id="PTT-hc-8sq"/>
+                            <constraint firstItem="oNY-6S-nFu" firstAttribute="leading" secondItem="2gW-lV-v8o" secondAttribute="trailing" constant="8" id="R4a-wj-eWj"/>
+                            <constraint firstItem="qHm-vV-MG6" firstAttribute="leading" secondItem="VES-fs-dzc" secondAttribute="trailing" constant="-29" id="VBb-so-Urs"/>
+                            <constraint firstItem="508-NX-HPW" firstAttribute="top" secondItem="ewV-5o-Iph" secondAttribute="bottom" constant="8" id="WhB-LH-1b2"/>
+                            <constraint firstItem="qHm-vV-MG6" firstAttribute="top" secondItem="f3t-kp-GyY" secondAttribute="bottom" constant="95" id="Xel-lU-LcE"/>
+                            <constraint firstItem="oZV-MA-vqn" firstAttribute="leading" secondItem="RGW-9t-wZQ" secondAttribute="trailing" constant="89" id="YSI-jr-FoV"/>
+                            <constraint firstItem="RGW-9t-wZQ" firstAttribute="centerY" secondItem="oZV-MA-vqn" secondAttribute="centerY" id="YZj-Kc-qOT"/>
+                            <constraint firstItem="qHm-vV-MG6" firstAttribute="leading" secondItem="RGW-9t-wZQ" secondAttribute="trailing" constant="-91" id="Z10-z6-xa7"/>
+                            <constraint firstItem="qHm-vV-MG6" firstAttribute="leading" secondItem="ewV-5o-Iph" secondAttribute="trailing" constant="-40" id="ZB4-6v-cQG"/>
+                            <constraint firstItem="qHm-vV-MG6" firstAttribute="leading" secondItem="BLj-2K-75C" secondAttribute="trailing" constant="-294" id="ZEc-In-uwc"/>
+                            <constraint firstItem="56C-gW-T6d" firstAttribute="centerY" secondItem="V5z-cU-Hql" secondAttribute="centerY" id="aIY-zs-Ikg"/>
+                            <constraint firstItem="RGW-9t-wZQ" firstAttribute="top" secondItem="AhX-vs-Cc2" secondAttribute="bottom" constant="-3" id="cIG-dD-Txe"/>
+                            <constraint firstItem="VpS-Lh-fVC" firstAttribute="leading" secondItem="VES-fs-dzc" secondAttribute="trailing" constant="8" id="cKE-8A-weH"/>
+                            <constraint firstItem="mZ8-aX-llW" firstAttribute="leading" secondItem="Nei-X7-C6X" secondAttribute="trailing" constant="67" id="caY-Ha-1IG"/>
+                            <constraint firstItem="qHm-vV-MG6" firstAttribute="top" secondItem="ewV-5o-Iph" secondAttribute="bottom" constant="-36" id="cni-VO-KdS"/>
+                            <constraint firstItem="VES-fs-dzc" firstAttribute="top" secondItem="2be-d2-AYT" secondAttribute="bottom" constant="8" id="d1j-L5-Jvw"/>
+                            <constraint firstItem="qHm-vV-MG6" firstAttribute="leading" secondItem="508-NX-HPW" secondAttribute="trailing" constant="-117" id="d6q-eL-g26"/>
+                            <constraint firstItem="xr8-vv-oMZ" firstAttribute="centerY" secondItem="nwW-hG-Dej" secondAttribute="centerY" constant="0.5" id="dqZ-r3-4Z8"/>
+                            <constraint firstAttribute="centerX" secondItem="qHm-vV-MG6" secondAttribute="centerX" id="eAB-3b-jAC"/>
+                            <constraint firstItem="xr8-vv-oMZ" firstAttribute="leading" secondItem="nwW-hG-Dej" secondAttribute="trailing" constant="2" id="fha-Y5-EAz"/>
+                            <constraint firstItem="AhX-vs-Cc2" firstAttribute="centerY" secondItem="6W4-lJ-V5o" secondAttribute="centerY" constant="3" id="gMq-sP-0Dx"/>
+                            <constraint firstItem="Nei-X7-C6X" firstAttribute="top" secondItem="vCN-23-1OT" secondAttribute="bottom" constant="-3" id="hN8-oh-lBS"/>
+                            <constraint firstItem="qHm-vV-MG6" firstAttribute="leading" secondItem="FZx-Ry-Yus" secondAttribute="trailing" constant="-181" id="jIF-8C-Yvb"/>
+                            <constraint firstItem="V5z-cU-Hql" firstAttribute="leading" secondItem="56C-gW-T6d" secondAttribute="trailing" constant="8" id="lin-vI-gNB"/>
+                            <constraint firstItem="nwW-hG-Dej" firstAttribute="centerY" secondItem="ewV-5o-Iph" secondAttribute="centerY" constant="-0.5" id="lrh-rw-8MG"/>
+                            <constraint firstItem="K1V-aW-LU3" firstAttribute="leading" secondItem="Gsv-iH-uEO" secondAttribute="trailing" constant="6" id="o7X-Y5-dES"/>
+                            <constraint firstItem="CtX-5E-lrH" firstAttribute="top" secondItem="f3t-kp-GyY" secondAttribute="bottom" constant="18" id="oQy-i7-MAM"/>
+                            <constraint firstItem="Log-A6-Lhd" firstAttribute="top" secondItem="CtX-5E-lrH" secondAttribute="bottom" constant="3" id="vKP-5K-KWJ"/>
+                            <constraint firstItem="qHm-vV-MG6" firstAttribute="leading" secondItem="AhX-vs-Cc2" secondAttribute="trailing" constant="-177" id="yFK-P2-1Wc"/>
+                            <constraint firstItem="CtX-5E-lrH" firstAttribute="leading" secondItem="Gsv-iH-uEO" secondAttribute="trailing" constant="6" id="yNj-n4-3wc"/>
+                            <constraint firstItem="Gsv-iH-uEO" firstAttribute="leading" secondItem="mf1-KS-FQE" secondAttribute="leadingMargin" constant="-3" id="yqP-92-Syi"/>
+                            <constraint firstItem="qHm-vV-MG6" firstAttribute="leading" secondItem="vCN-23-1OT" secondAttribute="trailing" constant="-135" id="zSK-20-G8r"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Maria Frô" id="SE0-3K-MGR"/>
                     <connections>
-                        <outlet property="background" destination="CKe-9L-Fyh" id="rCP-bf-cB7"/>
+                        <outlet property="background" destination="qHm-vV-MG6" id="jYM-Lt-Q3a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AID-EV-p0x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1168.5" y="565.5"/>
+            <point key="canvasLocation" x="623" y="535"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8LK-29-WLW">
@@ -503,15 +473,22 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lkk-x1-0Us" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-317" y="40"/>
+            <point key="canvasLocation" x="-169.06666666666666" y="37.866666666666667"/>
         </scene>
     </scenes>
     <resources>
         <image name="Pinterest" width="2500" height="2500"/>
         <image name="facebook" width="626" height="412"/>
+        <image name="flowericon 2" width="30" height="29"/>
+        <image name="icon4" width="32" height="30"/>
         <image name="instagram" width="640" height="588"/>
         <image name="location-icon-vector-Map_pin" width="450" height="450"/>
         <image name="logo" width="1218" height="1128"/>
         <image name="whatsapp" width="300" height="300"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
