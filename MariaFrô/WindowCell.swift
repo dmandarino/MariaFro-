@@ -14,4 +14,8 @@ class WindowCell: UICollectionViewCell {
     
     @IBOutlet weak var crownInfo: UILabel!
     
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
 }
