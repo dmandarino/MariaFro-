@@ -11,6 +11,21 @@ import UIKit
 class Profile: UIViewController {
     
     
+    @IBAction func instagram(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://www.instagram.com/maria.fro")!)
+    }
+    
+    @IBAction func facebook(sender: AnyObject) {
+        
+        UIApplication.sharedApplication().openURL(NSURL(string: "https://www.facebook.com/mariafro.coroadeflores")!)
+    }
+    
+    @IBAction func pinterest(sender: AnyObject) {
+        
+        UIApplication.sharedApplication().openURL(NSURL(string: "https://www.pinterest.com/mariafrobrazil/")!)
+    }
+    
+    
     @IBOutlet weak var background: UIImageView!
 
     override func viewDidLoad() {
