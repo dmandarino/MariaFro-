@@ -8,20 +8,28 @@
 
 import UIKit
 
-class Window: UICollectionViewController {
+class Window: UICollectionViewController, UICollectionViewDataSource {
+    
+    
+    @IBOutlet weak var background: UIImageView!
+
 
    
     let pictures = [UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1"), UIImage(named: "Crown1")]
     
-    let pictureInfo = ["#001", "#002", "#003", "#004", "#005", "#006", "#007", "#008", "#009", "#65", "#010", "#011", "#012", "#013"]
+    let pictureInfo = ["#001", "#002", "#003", "#004", "#005", "#006", "#007", "#008", "#009", "#010", "#011", "#012", "#013", "#014"]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        background.image = UIImage(named: "background1")
+        background.alpha = 0.3
+        
 
         // Do any additional setup after loading the view.
     }
+    
     
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -55,7 +63,15 @@ class Window: UICollectionViewController {
         return 1
     }
 
-    
+
+//    override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind:String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+//        
+//        let commentView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "MariaFroPhotoHeaderView", forIndexPath: indexPath) as! MariaFroPhotoHeaderView
+//        
+//        commentView.label.text = "Supplementary view of kind \(kind)"
+//        
+//        return commentView
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

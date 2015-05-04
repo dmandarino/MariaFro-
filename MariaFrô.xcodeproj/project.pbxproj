@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB9C96BC1AF7B2D100F73E08 /* MariaFroPhotoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9C96BB1AF7B2D100F73E08 /* MariaFroPhotoHeaderView.swift */; };
+		AB9C96BE1AF7C61900F73E08 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9C96BD1AF7C61900F73E08 /* Profile.swift */; };
 		ABB180751AF27D6300446BB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB180741AF27D6300446BB7 /* AppDelegate.swift */; };
-		ABB180771AF27D6300446BB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB180761AF27D6300446BB7 /* ViewController.swift */; };
 		ABB1807A1AF27D6300446BB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB180781AF27D6300446BB7 /* Main.storyboard */; };
 		ABB1807C1AF27D6300446BB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABB1807B1AF27D6300446BB7 /* Images.xcassets */; };
 		ABB1807F1AF27D6300446BB7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB1807D1AF27D6300446BB7 /* LaunchScreen.xib */; };
@@ -32,10 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB9C96BB1AF7B2D100F73E08 /* MariaFroPhotoHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MariaFroPhotoHeaderView.swift; sourceTree = "<group>"; };
+		AB9C96BD1AF7C61900F73E08 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		ABB1806F1AF27D6300446BB7 /* MariaFrô.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MariaFrô.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB180731AF27D6300446BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABB180741AF27D6300446BB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ABB180761AF27D6300446BB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ABB180791AF27D6300446BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABB1807B1AF27D6300446BB7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ABB1807E1AF27D6300446BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -93,11 +95,12 @@
 			isa = PBXGroup;
 			children = (
 				ABB180781AF27D6300446BB7 /* Main.storyboard */,
+				ABB180981AF297DE00446BB7 /* VCnavigation.swift */,
 				ABB180741AF27D6300446BB7 /* AppDelegate.swift */,
-				ABB180761AF27D6300446BB7 /* ViewController.swift */,
 				ABB180941AF2837E00446BB7 /* Window.swift */,
 				ABB180961AF283A700446BB7 /* WindowCell.swift */,
-				ABB180981AF297DE00446BB7 /* VCnavigation.swift */,
+				AB9C96BB1AF7B2D100F73E08 /* MariaFroPhotoHeaderView.swift */,
+				AB9C96BD1AF7C61900F73E08 /* Profile.swift */,
 				ABB1807D1AF27D6300446BB7 /* LaunchScreen.xib */,
 				ABB1807B1AF27D6300446BB7 /* Images.xcassets */,
 				ABB180721AF27D6300446BB7 /* Supporting Files */,
@@ -235,7 +238,8 @@
 			files = (
 				ABB180971AF283A700446BB7 /* WindowCell.swift in Sources */,
 				ABB180991AF297DE00446BB7 /* VCnavigation.swift in Sources */,
-				ABB180771AF27D6300446BB7 /* ViewController.swift in Sources */,
+				AB9C96BE1AF7C61900F73E08 /* Profile.swift in Sources */,
+				AB9C96BC1AF7B2D100F73E08 /* MariaFroPhotoHeaderView.swift in Sources */,
 				ABB180951AF2837E00446BB7 /* Window.swift in Sources */,
 				ABB180751AF27D6300446BB7 /* AppDelegate.swift in Sources */,
 			);
