@@ -12,6 +12,8 @@ class WindowCell: UICollectionViewCell {
     
     @IBOutlet weak var crownPicture: UIImageView!
     
+    //var image: UIImage!
+    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }

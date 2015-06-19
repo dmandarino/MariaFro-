@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>1EBD86DC-6CA9-4550-A028-C9524531A22A</string>
 	<key>IDESourceControlProjectName</key>
-	<string>MariaFrô</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>C74DD5F724BDB03E815B61CBC2208B62F9FBC7B5</key>
 		<string>https://github.com/dmandarino/MariaFro-.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MariaFrô.xcodeproj</string>
+	<string>MariaFrô.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C74DD5F724BDB03E815B61CBC2208B62F9FBC7B5</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>C74DD5F724BDB03E815B61CBC2208B62F9FBC7B5</string>
 			<key>IDESourceControlWCCName</key>
-			<string>MariaFro%CC%82</string>
+			<string>MariaFro-</string>
 		</dict>
 	</array>
 </dict>

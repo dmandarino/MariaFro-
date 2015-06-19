@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		5A60A1B91AF7FC1C000A824F /* MainScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A60A1B81AF7FC1C000A824F /* MainScreenController.swift */; };
 		5A60A1BB1AF7FC91000A824F /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A60A1BA1AF7FC91000A824F /* SectionCell.swift */; };
+		AB67128F1B057D3700E16417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB180741AF27D6300446BB7 /* AppDelegate.swift */; };
+		AB6712901B057D5200E16417 /* ReenieBeanie.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB67128B1B056AE500E16417 /* ReenieBeanie.ttf */; };
 		AB9C96BE1AF7C61900F73E08 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9C96BD1AF7C61900F73E08 /* Profile.swift */; };
-		ABB180751AF27D6300446BB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB180741AF27D6300446BB7 /* AppDelegate.swift */; };
 		ABB1807A1AF27D6300446BB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB180781AF27D6300446BB7 /* Main.storyboard */; };
 		ABB1807C1AF27D6300446BB7 /* phot.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABB1807B1AF27D6300446BB7 /* phot.xcassets */; };
 		ABB1807F1AF27D6300446BB7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB1807D1AF27D6300446BB7 /* LaunchScreen.xib */; };
@@ -20,6 +21,12 @@
 		ABB180A91AF2F08300446BB7 /* Quicksand-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ABB180A81AF2F08300446BB7 /* Quicksand-LightItalic.otf */; };
 		ABB180AD1AF325F400446BB7 /* Quicksand-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ABB180AC1AF325F400446BB7 /* Quicksand-Italic.otf */; };
 		ABB180AF1AF3260100446BB7 /* Quicksand-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = ABB180AE1AF3260100446BB7 /* Quicksand-Regular.otf */; };
+		ABCABB921AF9565700DA64A4 /* CustomHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCABB911AF9565700DA64A4 /* CustomHeaderCell.swift */; };
+		ABDB2DAC1B2F2114008721CE /* OpenImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDB2DAB1B2F2114008721CE /* OpenImageVC.swift */; };
+		ABDB2DAE1B2F8E57008721CE /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDB2DAD1B2F8E57008721CE /* MapVC.swift */; };
+		ABDB2DB01B2F8FA1008721CE /* InstaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDB2DAF1B2F8FA1008721CE /* InstaVC.swift */; };
+		ABDB2DB21B2F95FB008721CE /* FaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDB2DB11B2F95FB008721CE /* FaceVC.swift */; };
+		ABDB2DB41B2F96DF008721CE /* PinterestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDB2DB31B2F96DF008721CE /* PinterestVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,7 @@
 /* Begin PBXFileReference section */
 		5A60A1B81AF7FC1C000A824F /* MainScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenController.swift; sourceTree = "<group>"; };
 		5A60A1BA1AF7FC91000A824F /* SectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
+		AB67128B1B056AE500E16417 /* ReenieBeanie.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ReenieBeanie.ttf; sourceTree = "<group>"; };
 		AB9C96BD1AF7C61900F73E08 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		ABB1806F1AF27D6300446BB7 /* MariaFrô.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MariaFrô.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB180731AF27D6300446BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +58,12 @@
 		ABB180A81AF2F08300446BB7 /* Quicksand-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-LightItalic.otf"; sourceTree = "<group>"; };
 		ABB180AC1AF325F400446BB7 /* Quicksand-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Italic.otf"; sourceTree = "<group>"; };
 		ABB180AE1AF3260100446BB7 /* Quicksand-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.otf"; sourceTree = "<group>"; };
+		ABCABB911AF9565700DA64A4 /* CustomHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderCell.swift; sourceTree = "<group>"; };
+		ABDB2DAB1B2F2114008721CE /* OpenImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenImageVC.swift; sourceTree = "<group>"; };
+		ABDB2DAD1B2F8E57008721CE /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		ABDB2DAF1B2F8FA1008721CE /* InstaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaVC.swift; sourceTree = "<group>"; };
+		ABDB2DB11B2F95FB008721CE /* FaceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceVC.swift; sourceTree = "<group>"; };
+		ABDB2DB31B2F96DF008721CE /* PinterestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +89,11 @@
 			children = (
 				5A60A1B81AF7FC1C000A824F /* MainScreenController.swift */,
 				AB9C96BD1AF7C61900F73E08 /* Profile.swift */,
+				ABDB2DAB1B2F2114008721CE /* OpenImageVC.swift */,
+				ABDB2DAD1B2F8E57008721CE /* MapVC.swift */,
+				ABDB2DAF1B2F8FA1008721CE /* InstaVC.swift */,
+				ABDB2DB11B2F95FB008721CE /* FaceVC.swift */,
+				ABDB2DB31B2F96DF008721CE /* PinterestVC.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -86,6 +105,7 @@
 				ABB1807D1AF27D6300446BB7 /* LaunchScreen.xib */,
 				5A60A1BA1AF7FC91000A824F /* SectionCell.swift */,
 				ABB180961AF283A700446BB7 /* WindowCell.swift */,
+				ABCABB911AF9565700DA64A4 /* CustomHeaderCell.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -99,6 +119,7 @@
 				ABB180A81AF2F08300446BB7 /* Quicksand-LightItalic.otf */,
 				ABB180AC1AF325F400446BB7 /* Quicksand-Italic.otf */,
 				ABB180AE1AF3260100446BB7 /* Quicksand-Regular.otf */,
+				AB67128B1B056AE500E16417 /* ReenieBeanie.ttf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,6 +219,7 @@
 				TargetAttributes = {
 					ABB1806E1AF27D6300446BB7 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = P7WBF39CHK;
 					};
 					ABB180831AF27D6300446BB7 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -234,6 +256,7 @@
 				ABB180A91AF2F08300446BB7 /* Quicksand-LightItalic.otf in Resources */,
 				ABB180AD1AF325F400446BB7 /* Quicksand-Italic.otf in Resources */,
 				ABB180AF1AF3260100446BB7 /* Quicksand-Regular.otf in Resources */,
+				AB6712901B057D5200E16417 /* ReenieBeanie.ttf in Resources */,
 				ABB1807C1AF27D6300446BB7 /* phot.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,12 +275,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABCABB921AF9565700DA64A4 /* CustomHeaderCell.swift in Sources */,
 				ABB180971AF283A700446BB7 /* WindowCell.swift in Sources */,
+				ABDB2DAC1B2F2114008721CE /* OpenImageVC.swift in Sources */,
+				ABDB2DB41B2F96DF008721CE /* PinterestVC.swift in Sources */,
 				5A60A1BB1AF7FC91000A824F /* SectionCell.swift in Sources */,
 				ABB180991AF297DE00446BB7 /* VCnavigation.swift in Sources */,
+				ABDB2DB21B2F95FB008721CE /* FaceVC.swift in Sources */,
+				AB67128F1B057D3700E16417 /* AppDelegate.swift in Sources */,
 				AB9C96BE1AF7C61900F73E08 /* Profile.swift in Sources */,
+				ABDB2DB01B2F8FA1008721CE /* InstaVC.swift in Sources */,
+				ABDB2DAE1B2F8E57008721CE /* MapVC.swift in Sources */,
 				5A60A1B91AF7FC1C000A824F /* MainScreenController.swift in Sources */,
-				ABB180751AF27D6300446BB7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "MariaFrô/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "MariaFrô/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -13,7 +13,11 @@ class SectionCell: UITableViewCell, UICollectionViewDataSource, UICollectionView
     
     var prefix:String?
     
+    @IBOutlet var labelTable: UILabel!
+    
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var HeaderLabel: UILabel!
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -22,7 +26,7 @@ class SectionCell: UITableViewCell, UICollectionViewDataSource, UICollectionView
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 14
+        return 18
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -37,7 +41,10 @@ class SectionCell: UITableViewCell, UICollectionViewDataSource, UICollectionView
         
         let row = indexPath.item
         
+//        picture.image = UIImage(named: name)
+        
         return picture
     }
+    
 
 }

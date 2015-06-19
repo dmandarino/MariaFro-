@@ -1,20 +1,24 @@
 //
-//  VCnavigationViewController.swift
+//  MapVC.swift
 //  MariaFrô
 //
-//  Created by Luisa Carvalho de Mendonça Ronchi on 30/04/15.
+//  Created by Luisa Carvalho de Mendonça Ronchi on 15/06/15.
 //  Copyright (c) 2015 BEPiD. All rights reserved.
 //
 
 import UIKit
+import MapKit
 
-class VCnavigation: UINavigationController {
+class MapVC: UIViewController, MKMapViewDelegate {
 
+    @IBOutlet var mapView: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blackColor(), NSFontAttributeName: UIFont(name: "Reenie Beanie", size: 30)!]
         
+        self.mapView.delegate = self
+        loadMap()
+
 
         // Do any additional setup after loading the view.
     }

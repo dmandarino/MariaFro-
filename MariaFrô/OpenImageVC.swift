@@ -1,20 +1,22 @@
 //
-//  VCnavigationViewController.swift
+//  OpenImageVC.swift
 //  MariaFrô
 //
-//  Created by Luisa Carvalho de Mendonça Ronchi on 30/04/15.
+//  Created by Luisa Carvalho de Mendonça Ronchi on 15/06/15.
 //  Copyright (c) 2015 BEPiD. All rights reserved.
 //
 
 import UIKit
 
-class VCnavigation: UINavigationController {
+class OpenImageVC: UIViewController {
 
+    @IBOutlet var screenImage: UIImageView!
+    var image : UIImage!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blackColor(), NSFontAttributeName: UIFont(name: "Reenie Beanie", size: 30)!]
         
+        screenImage.image = image
 
         // Do any additional setup after loading the view.
     }

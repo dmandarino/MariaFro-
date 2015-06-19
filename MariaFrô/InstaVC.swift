@@ -1,22 +1,26 @@
 //
-//  VCnavigationViewController.swift
+//  WebVC.swift
 //  MariaFrô
 //
-//  Created by Luisa Carvalho de Mendonça Ronchi on 30/04/15.
+//  Created by Luisa Carvalho de Mendonça Ronchi on 15/06/15.
 //  Copyright (c) 2015 BEPiD. All rights reserved.
 //
 
 import UIKit
 
-class VCnavigation: UINavigationController {
+class InstaVC: UIViewController {
 
+    @IBOutlet var webView: UIWebView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blackColor(), NSFontAttributeName: UIFont(name: "Reenie Beanie", size: 30)!]
-        
 
-        // Do any additional setup after loading the view.
+        let url = NSURL(string: "http://instagram.com/maria.fro")
+        let request = NSURLRequest(URL: url!)
+        webView.loadRequest(request)
+        
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +28,8 @@ class VCnavigation: UINavigationController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+
 
     /*
     // MARK: - Navigation

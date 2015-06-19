@@ -1,21 +1,24 @@
 //
-//  VCnavigationViewController.swift
+//  FaceVC.swift
 //  MariaFrô
 //
-//  Created by Luisa Carvalho de Mendonça Ronchi on 30/04/15.
+//  Created by Luisa Carvalho de Mendonça Ronchi on 15/06/15.
 //  Copyright (c) 2015 BEPiD. All rights reserved.
 //
 
 import UIKit
 
-class VCnavigation: UINavigationController {
+class FaceVC: UIViewController {
 
+    @IBOutlet var faceView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blackColor(), NSFontAttributeName: UIFont(name: "Reenie Beanie", size: 30)!]
-        
 
+        let url = NSURL(string: "http://facebook.com/mariafro.coroadeflores")
+        let request = NSURLRequest(URL: url!)
+        faceView.loadRequest(request)
+        
         // Do any additional setup after loading the view.
     }
 
